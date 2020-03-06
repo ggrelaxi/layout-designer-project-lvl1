@@ -1,253 +1,156 @@
-/** CSS STYLE **/
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ЖК «Лунное море» alexggrelaxi</title>
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
- 
-/* Remove default padding */
-ul[class],
-ol[class] {
-  padding: 0;
-}
- 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
- 
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
- 
-/* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
-  list-style: none;
-}
- 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
- 
-/* Make images easier to work with */
-img {
-  max-width: 100%;
-  display: block;
-}
- 
-/* Natural flow and rhythm in articles by default */
-article > * + * {
-  margin-top: 1em;
-}
- 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
- 
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* Шапка */
-
-header {
-    display: flex;
-    background-color: #FFF;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    height:100px;
-}
-
-.left-header-block, .right-header-block {
-    display: flex;
-}
-
-    .left-header-block {
-        margin-left: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-
-        .left-header-block img {
-            width:50px;
-            height:50px;
-            margin-right:20px;
-        }
-
-    .right-header-block {
-        margin-right:20px;
-        justify-content: center;
-        align-items: center;
-    }
-        .right-header-block ul {
-            display: flex;
-        }
-            .right-header-block ul li {
-                margin-right: 20px;
-                list-style: none;
-                
-            }
-                .right-header-block ul li a {
-                    text-decoration: none;
-                    color: #000;
-                }
-
-/* контент часть 1 блок с картинкой */
-
-main {
-    display: flex;
-    padding-top: 100px;
-    flex-direction: column;
-}
-    .header-content-block {
-        display: flex;
-        background-image: url(../images/banner.png);
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-position: center;
-        padding: 30px 0px;
-        color: #FFF;
-    }
-
-    .header-content-block img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .header-content-block h1 {
-        font-size: 48px;
-    }
-
-    .header-content-block p {
-        margin-bottom:15px;
-    }
-
-    .header-content-block button {
-        background-color: transparent;
-        border-radius: 4px;
-        color: #FFF;
-        border: 0.5px solid #FFF;
-        padding: 5px 20px;
-    }
-
-/* вторая часть с тремя блоками информации */
-
-.first-content-block, .second-content-block, .third-content-block {
-    display: flex;
-    padding: 50px;
-    justify-content: space-between;
-}
-
-.center-position-content, .center-position-content-second, .center-position-content-third {
-    width:1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-    .center-position-content div {
-        width: 30%;
-    }
-
-    .main-h-header {
-        margin-bottom: 20px;
-    }
-
-.second-content-block {
-    background-color: #ececec;
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
         
-}   
+            <div class="left-header-block">
+                <div class="header-logo-img">
+                    <img src="images/index.svg" alt="logo">
+                </div>
 
-.center-position-content-second div:nth-child(1) {
-    width: 50%;
-}
-.center-position-content-second div:nth-child(2) {
-    width: 30%;
-}
-.center-position-content-third div:nth-child(2) {
-    width: 50%;
-}
-.center-position-content-third div:nth-child(1) {
-    width: 30%;
-}
+                <div class="header-name-block">
+                    <p>Лунное море</p>
+                </div>
+            </div>
 
-.call-back-block {
-    display: flex;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-    background-color: #ececec;
+            <div class="right-header-block">
+                <ul>
+                    <li><a href="#">Преимущества</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Места для отдыха</a></li>
+                </ul>
+            </div>
+        
+    </header>
 
-}
+    <main>
+        <section class="header-content-block">
+            <img src="images/index.svg" alt="logo">
+            <h1>ЖК "Лунное море"</h1>
+            <p>Место, откуда не хочется улетать</p>
+            <a href="#forma-broni">Забронировать</a>
+        </section>
+        <section class="first-content-block">
+            <div class="center-position-content">
+                <div>
+                    <h2 class="main-h-header">Уникальный вид</h2>
+                    <p>Вид на космос из вашего окна. Мы построили дома с большими окнами,
+                    чтобы вы могли наслаждаться метеоритными потоками.</p>
+                </div>
 
-/* форма заявки */
+                <div>
+                    <h2 class="main-h-header">Инфраструктура</h2>
+                    <p>Прекрасные дороги рядом с домом. Много мест для прогулки. 
+                    Всего в 200 км. от посёлка находится кольцо гор Кордильеры,
+                    на которых вы сможете провести незабываемые выходные.</p>
+                </div>
+                
+                <div>
+                    <h2 class="main-h-header">Близость к Москве</h2>
+                    <p>При небольшой цене мы располагаемся близко к МКАД. 
+                    Всего 384 000 километров и вы в самом сердце России.</p>
+                </div>
+            </div>
+        </section>
 
-form {
-    width: 400px;
-    
-}
+            <section class="second-content-block">
+                <div class="center-position-content-second">
+                    <div>
+                        <h2 class="main-h-header">О ЖК "Лунное море"</h2>
+                        <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
+                        к тому же связь с мегаполисом не теряется – современные скоростные
+                        трассы позволяют без труда добираться до столицы и обратно.
 
-fieldset {
-    padding: 20px 30px;
-    margin-bottom: 20px;
-}
+                        Мы построили наши дома на самом близком к Солнцу спутнике,
+                        всего в 380 тысяч километров от Земли.
+                        </p>
 
-legend {
-    font-size:20px;
-    color: #66CDAA
-}
+                    </div>
 
-.form-string {
-    display: flex;
-    margin-bottom: 10px;
+                    <div>
+                        <img src="images/moon-1.jpg" alt="about-logo">
+                    </div>
+                </div>
+            </section>
 
-}
+            <section class="third-content-block">
+                <div class="center-position-content-third">
+                    <div>
+                        <img src="images/moon-1.jpg" alt="about-logo">
+                    </div>
+                    <div>
+                        <h2 class="main-h-header">О ЖК "Лунное море"</h2>
+                        <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
+                        к тому же связь с мегаполисом не теряется – современные скоростные
+                        трассы позволяют без труда добираться до столицы и обратно.
 
-label, input, select {
-    width:50%;
-    display: flex;
-}
+                        Мы построили наши дома на самом близком к Солнцу спутнике,
+                        всего в 380 тысяч километров от Земли.
+                        </p>
 
-.input-width50-margin20 {
-    width: 40%;
-}
+                    </div>
 
-button {
-    font-size:20px;
-    color: #66CDAA;
-    border-radius: 4px;
-    border: 0.5px solid #66CDAA;
-    padding: 0px 30px;
-}
+                    
+                </div>
+            </section>
+
+            <section class="call-back-block">
+                <form action="" id="forma-broni">
+                    <fieldset>
+                      <legend>Параметры квартиры</legend>
+                        <div class="form-string">
+                            <label for="room-count">Количество комнат</label>
+                            <select id="room-count" class="input-width50-margin20">
+                                <option>1 комната</option>
+                                <option>2 комната</option>
+                                <option>3 комната</option>
+                            </select>
+                        </div>
+
+                        <div class="form-string">
+                            <label for="room-otdelka">Отделка</label>
+                            <select id="room-otdelka" class="input-width50-margin20">
+                                <option>Без отделки</option>
+                                <option>Средняя отделка</option>
+                                <option>Полная отделка</option>
+                            </select>
+                        </div>
+                  
+                      
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Контактная информация</legend>
+                        <div class="form-string">
+                            <label for="user-name">Имя:</label>
+                            <input type="name" id="user-name" class="input-width-70">
+                        </div>
+                        <div class="form-string">
+                            <label for="user-name">Телефон:</label>
+                            <input type="phone" id="user-phone" class="input-width-70">
+                        </div>
+                        <div class="form-string">
+                            <label for="user-name">Имя:</label>
+                            <input type="E-mail" id="user-email" class="input-width-70">
+                        </div>
+                    </fieldset>
+
+                    <button type="submit">Отправить</button>
+                  </form>
+                  
+            </section>
+    </main>
+
+    <footer>
+        Подвал
+    </footer>
+</body>
+</html>
