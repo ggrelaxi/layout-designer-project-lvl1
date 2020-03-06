@@ -23,21 +23,24 @@
 
             <div class="right-header-block">
                 <ul>
-                    <li><a href="#">Преимущества</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Места для отдыха</a></li>
+                    <li><a href="#preimushestva">Преимущества</a></li>
+                    <li><a href="#about-jk">О нас</a></li>
+                    <li><a href="#relax-place">Места для отдыха</a></li>
                 </ul>
             </div>
         
     </header>
 
     <main>
+        
         <section class="header-content-block">
             <img src="images/index.svg" alt="logo">
             <h1>ЖК "Лунное море"</h1>
             <p>Место, откуда не хочется улетать</p>
             <a href="#forma-broni">Забронировать</a>
         </section>
+        
+        <div id="preimushestva"></div>
         <section class="first-content-block">
             <div class="center-position-content">
                 <div>
@@ -60,7 +63,7 @@
                 </div>
             </div>
         </section>
-
+            <div id="about-jk"></div>
             <section class="second-content-block">
                 <div class="center-position-content-second">
                     <div>
@@ -81,13 +84,14 @@
                 </div>
             </section>
 
+            <div id="relax-place"></div>
             <section class="third-content-block">
                 <div class="center-position-content-third">
                     <div>
-                        <img src="images/moon-1.jpg" alt="about-logo">
+                        <img src="images/moon-2.jpg" alt="about-logo">
                     </div>
                     <div>
-                        <h2 class="main-h-header">О ЖК "Лунное море"</h2>
+                        <h2 class="main-h-header">Места для отдыха</h2>
                         <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
                         к тому же связь с мегаполисом не теряется – современные скоростные
                         трассы позволяют без труда добираться до столицы и обратно.
@@ -103,7 +107,7 @@
             </section>
 
             <section class="call-back-block">
-                <form action="" id="forma-broni">
+                <form id="forma-broni">
                     <fieldset>
                       <legend>Параметры квартиры</legend>
                         <div class="form-string">
@@ -131,15 +135,15 @@
                         <legend>Контактная информация</legend>
                         <div class="form-string">
                             <label for="user-name">Имя:</label>
-                            <input type="name" id="user-name" class="input-width-70">
+                            <input type="text" id="user-name" class="input-width-70">
                         </div>
                         <div class="form-string">
                             <label for="user-name">Телефон:</label>
-                            <input type="phone" id="user-phone" class="input-width-70">
+                            <input type="tel" id="user-phone" class="input-width-70">
                         </div>
                         <div class="form-string">
-                            <label for="user-name">Имя:</label>
-                            <input type="E-mail" id="user-email" class="input-width-70">
+                            <label for="user-name">Email:</label>
+                            <input type="email" id="user-email" class="input-width-70">
                         </div>
                     </fieldset>
 
