@@ -36,7 +36,7 @@
             <img src="images/index.svg" alt="logo">
             <h1>ЖК "Лунное море"</h1>
             <p>Место, откуда не хочется улетать</p>
-            <button>Забронировать</button>
+            <button id="button-zabronivorat">Забронировать</button>
         </section>
         <section class="first-content-block">
             <div class="center-position-content">
@@ -100,6 +100,52 @@
 
                     
                 </div>
+            </section>
+
+            <section class="call-back-block">
+                <form>
+                    <fieldset>
+                      <legend>Параметры квартиры</legend>
+                        <div class="form-string">
+                            <label for="room-count">Количество комнат</label>
+                            <select id="room-count" class="input-width50-margin20">
+                                <option>1 комната</option>
+                                <option>2 комната</option>
+                                <option>3 комната</option>
+                            </select>
+                        </div>
+
+                        <div class="form-string">
+                            <label for="room-otdelka">Отделка</label>
+                            <select id="room-otdelka" class="input-width50-margin20">
+                                <option>Без отделки</option>
+                                <option>Средняя отделка</option>
+                                <option>Полная отделка</option>
+                            </select>
+                        </div>
+                  
+                      
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Контактная информация</legend>
+                        <div class="form-string">
+                            <label for="user-name">Имя:</label>
+                            <input type="name" id="user-name" class="input-width-70">
+                        </div>
+                        <div class="form-string">
+                            <label for="user-name">Телефон:</label>
+                            <input type="phone" id="user-phone" class="input-width-70">
+                        </div>
+                        <div class="form-string">
+                            <label for="user-name">Имя:</label>
+                            <input type="E-mail" id="user-email" class="input-width-70">
+                        </div>
+                    </fieldset>
+
+                    <button href="#button-zabronivorat">Отправить</button>
+                  </form>
+                  
             </section>
     </main>
 

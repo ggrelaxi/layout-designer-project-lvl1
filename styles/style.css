@@ -167,7 +167,6 @@ main {
 
 .first-content-block, .second-content-block, .third-content-block {
     display: flex;
-    margin: 0 auto;
     padding: 50px;
     justify-content: space-between;
 }
@@ -188,8 +187,7 @@ main {
 
 .second-content-block {
     background-color: #ececec;
-    background-size: cover;
-    
+        
 }   
 
 .center-position-content-second div:nth-child(1) {
@@ -203,4 +201,53 @@ main {
 }
 .center-position-content-third div:nth-child(1) {
     width: 30%;
+}
+
+.call-back-block {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+
+}
+
+/* форма заявки */
+
+form {
+    width: 400px;
+    
+}
+
+fieldset {
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size:20px;
+    color: #66CDAA
+}
+
+.form-string {
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+label, input, select {
+    width:50%;
+    display: flex;
+}
+
+.input-width50-margin20 {
+    width: 40%;
+}
+
+button {
+    font-size:20px;
+    color: #66CDAA;
+    border-radius: 4px;
+    border: 0.5px solid #66CDAA;
+    padding: 0px 30px;
 }
