@@ -1,1 +1,132 @@
 /** CSS STYLE **/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+ 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ 
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+ 
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+ 
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+ 
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+ 
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+ 
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+ 
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Шапка */
+
+header {
+    display: flex;
+    background-color: #FFF;
+    justify-content: space-between;
+    padding: 0px 20px;
+    position: fixed;
+    width: 100%;
+    height:100px;
+}
+
+.left-header-block, .right-header-block {
+    display: flex;
+}
+
+    .left-header-block {
+        margin-left: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .left-header-block img {
+            width:50px;
+            height:50px;
+            margin-right:20px;
+        }
+
+    .right-header-block {
+        margin-right:20px;
+        justify-content: center;
+        align-items: center;
+    }
+        .right-header-block ul {
+            display: flex;
+        }
+            .right-header-block ul li {
+                margin-right: 20px;
+                list-style: none;
+                
+            }
+                .right-header-block ul li a {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+/* контент часть */
+
+main {
+    padding-top: 100px;
+}
