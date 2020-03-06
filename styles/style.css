@@ -85,7 +85,6 @@ header {
     display: flex;
     background-color: #FFF;
     justify-content: space-between;
-    padding: 0px 20px;
     position: fixed;
     width: 100%;
     height:100px;
@@ -125,8 +124,40 @@ header {
                     color: #000;
                 }
 
-/* контент часть */
+/* контент часть 1 блок с картинкой */
 
 main {
+    display: flex;
     padding-top: 100px;
+    background-image: url(../images/banner.png);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    color: #FFF;
 }
+
+    main img {
+        width: 150px;
+        height: 150px;
+    }
+
+    main h1 {
+        font-size: 48px;
+    }
+
+    main p {
+        margin-bottom:15px;
+    }
+
+    main button {
+        background-color: transparent;
+        border-radius: 4px;
+        color: #FFF;
+        border: 0.5px solid #FFF;
+        padding: 5px 20px;
+    }
+
+/* вторая часть с тремя блоками информации */
