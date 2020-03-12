@@ -11,9 +11,9 @@
 <body>
     <header>
         
-            <div class="left-header-block">
-                <div class="header-logo-img">
-                    <img src="images/index.svg" alt="logo">
+            <div class="left-header-block d--flex j-cont--center al-items--center m-l--20px">
+                <div class="left-header-block_header-logo-img">
+                    <img class="w--50px h--50px m-r--20px" src="images/index.svg" alt="logo">
                 </div>
 
                 <div class="header-name-block">
@@ -21,11 +21,11 @@
                 </div>
             </div>
 
-            <div class="right-header-block">
-                <ul>
-                    <li><a href="#preimushestva">Преимущества</a></li>
-                    <li><a href="#about-jk">О нас</a></li>
-                    <li><a href="#relax-place">Места для отдыха</a></li>
+            <div class="d--flex m-r--20px j-cont--center al-items--center">
+                <ul class="d--flex">
+                    <li class="m-r--20px l-s--none"><a class="t-dec--none c-black" href="#preimushestva">Преимущества</a></li>
+                    <li class="m-r--20px l-s--none"><a class="t-dec--none c-black" href="#about-jk">О нас</a></li>
+                    <li class="m-r--20px l-s--none"><a class="t-dec--none c-black" href="#relax-place">Места для отдыха</a></li>
                 </ul>
             </div>
         
@@ -33,7 +33,7 @@
 
     <main>
         
-        <section class="header-content-block">
+        <section class="header-content-block d--flex al-items--center j-cont--center f-dir--col">
             <img src="images/index.svg" alt="logo">
             <h1>ЖК "Лунное море"</h1>
             <p>Место, откуда не хочется улетать</p>
@@ -41,22 +41,22 @@
         </section>
         
         <div id="preimushestva"></div>
-        <section class="first-content-block">
+        <section class="main-content-block">
             <div class="center-position-content">
-                <div>
+                <div class="w--30p">
                     <h2 class="main-h-header">Уникальный вид</h2>
                     <p>Вид на космос из вашего окна. Мы построили дома с большими окнами,
                     чтобы вы могли наслаждаться метеоритными потоками.</p>
                 </div>
 
-                <div>
+                <div class="w--30p">
                     <h2 class="main-h-header">Инфраструктура</h2>
                     <p>Прекрасные дороги рядом с домом. Много мест для прогулки. 
                     Всего в 200 км. от посёлка находится кольцо гор Кордильеры,
                     на которых вы сможете провести незабываемые выходные.</p>
                 </div>
                 
-                <div>
+                <di class="w--30p"v>
                     <h2 class="main-h-header">Близость к Москве</h2>
                     <p>При небольшой цене мы располагаемся близко к МКАД. 
                     Всего 384 000 километров и вы в самом сердце России.</p>
@@ -64,9 +64,9 @@
             </div>
         </section>
             <div id="about-jk"></div>
-            <section class="second-content-block">
-                <div class="center-position-content-second">
-                    <div>
+            <section class="main-content-block b-color-gray">
+                <div class="center-position-content">
+                    <div class="w--50p">
                         <h2 class="main-h-header">О ЖК "Лунное море"</h2>
                         <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
                         к тому же связь с мегаполисом не теряется – современные скоростные
@@ -78,19 +78,19 @@
 
                     </div>
 
-                    <div>
+                    <div class="w--30p">
                         <img src="images/moon-1.jpg" alt="about-logo">
                     </div>
                 </div>
             </section>
 
             <div id="relax-place"></div>
-            <section class="third-content-block">
-                <div class="center-position-content-third">
-                    <div>
+            <section class="main-content-block"">
+                <div class="center-position-content">
+                    <div class="w--30p">
                         <img src="images/moon-2.jpg" alt="about-logo">
                     </div>
-                    <div>
+                    <div class="w--50p">
                         <h2 class="main-h-header">Места для отдыха</h2>
                         <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
                         к тому же связь с мегаполисом не теряется – современные скоростные
@@ -107,6 +107,7 @@
             </section>
 
             <section class="call-back-block">
+                <h2>Оставьте заявку сегодня!</h2>
                 <form id="forma-broni">
                     <fieldset>
                       <legend>Параметры квартиры</legend>
@@ -114,8 +115,8 @@
                             <label for="room-count">Количество комнат</label>
                             <select id="room-count" class="input-width50-margin20">
                                 <option>1 комната</option>
-                                <option>2 комната</option>
-                                <option>3 комната</option>
+                                <option>2 комнаты</option>
+                                <option>3 комнаты</option>
                             </select>
                         </div>
 
@@ -153,11 +154,11 @@
             </section>
     </main>
 
-    <footer>
-        <div class="center-position-content-footer">
-            <div class="footer-info-block1">
-                <div>
-                    <img src="images/index.svg" alt="logo">
+    <footer class="d--flex">
+        <div class="center-position-content-footer d--flex">
+            <div class="f-dir--col w--33p">
+                <div class="d--flex al-items--center">
+                    <img class="footer-img" src="images/index.svg" alt="logo">
                     <p>Лунное море</p>
                 </div>
                 <div>
@@ -166,7 +167,7 @@
                 </div>
             </div>
 
-            <div class="footer-info-block2">
+            <div class="d--flex f-d--row j-cont--center w--33p">
                 <div>
                     <p class="footer-text-header">Проектная документация</p>
                     <ul>
@@ -176,7 +177,7 @@
                 </div>
             </div>
 
-            <div class="footer-info-block3">
+            <div class="d--flex w--33p j-cont--flex-end">
                 <div>
                     <p class="footer-text-header">О застройщике</p>
                     <ul>
