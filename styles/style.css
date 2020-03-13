@@ -197,9 +197,7 @@ select {
 /******************************** Стандартные блоки ********************************/
 
 .main-content-block {
-    display: flex;
     padding: 50px;
-    justify-content: space-between;
 }
 
 .center-position-content {
@@ -217,12 +215,12 @@ select {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* Шапка */
 
-header {
+.top-block {
     display: flex;
     background-color: #FFF;
     justify-content: space-between;
@@ -243,10 +241,9 @@ header {
 /* контент часть 1 блок с картинкой */
 
 main {
-    display: flex;
     padding-top: 100px;
-    flex-direction: column;
 }
+
     .header-content-block {
         background-image: url(../images/banner.png);
         background-position: center;
@@ -289,7 +286,6 @@ main {
 .call-back-block {
     display: flex;
     padding: 50px;
-    justify-content: center;
     align-items: center;
     background-color: #ececec;
     flex-direction: column;
@@ -352,7 +348,6 @@ button {
 footer {
     padding: 50px;
     justify-content: center;
-    align-items: center;
     background-color: #1c2c35;
     color: #fff;
     font-size: 14px;
