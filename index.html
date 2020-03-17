@@ -9,63 +9,63 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="fixed-header">
-        
-            <div class="display--flex justify-content--center align-items--center">
-                <div>
+    <header class="fixed-header align-items--center">
+            <div class="display--flex align-items--center">
+                
                     <img class="width--50px height--50px margin-right--20px" src="images/index.svg" alt="logo">
-                </div>
-
-                <div class="header-name-block">
+                
                     <p>Лунное море</p>
-                </div>
+                
             </div>
 
-            <div class="display--flex justify-content--center align-items--center">
-                <ul class="display--flex">
-                    <li class="margin-right--20px list-style--none"><a class="text-decoration--none color--black" href="#preimushestva">Преимущества</a></li>
-                    <li class="margin-right--20px list-style--none"><a class="text-decoration--none color--black" href="#about-jk">О нас</a></li>
-                    <li class="margin-right--20px list-style--none"><a class="text-decoration--none color--black" href="#relax-place">Места для отдыха</a></li>
-                </ul>
+            <div class="display--flex">
+                <nav>
+                    <ul class="display--flex list-style--none color--black">
+                        <li class="margin-right--20px "><a class="text-decoration--none" href="#preimushestva">Преимущества</a></li>
+                        <li class="margin-right--20px"><a class="text-decoration--none" href="#about-jk">О нас</a></li>
+                        <li class="margin-right--20px"><a class="text-decoration--none" href="#relax-place">Места для отдыха</a></li>
+                    </ul>
+                </nav>
             </div>
-        
-    </div>
+     </header>
 
     <main>
         
         <section class="header-content-block display--flex align-items--center justify-content--center flex-direction--column">
+            <div class="header-content-block__width-center">
             <img src="images/index.svg" alt="logo">
             <h1>ЖК "Лунное море"</h1>
             <p>Место, откуда не хочется улетать</p>
             <a href="#forma-broni">Забронировать</a>
+        </div>
         </section>
         
         <div id="preimushestva"></div>
-        <section class="main-content-block">
-            <div class="center-position-content">
-                <div class="width--30p">
-                    <h2>Уникальный вид</h2>
-                    <p>Вид на космос из вашего окна. Мы построили дома с большими окнами,
-                    чтобы вы могли наслаждаться метеоритными потоками.</p>
-                </div>
+            <section class="padding-all--50px">
+                <div class="content-block">
+                    <div class="width--30p">
+                        <h2>Уникальный вид</h2>
+                        <p>Вид на космос из вашего окна. Мы построили дома с большими окнами,
+                        чтобы вы могли наслаждаться метеоритными потоками.</p>
+                    </div>
 
-                <div class="width--30p">
-                    <h2>Инфраструктура</h2>
-                    <p>Прекрасные дороги рядом с домом. Много мест для прогулки. 
-                    Всего в 200 км. от посёлка находится кольцо гор Кордильеры,
-                    на которых вы сможете провести незабываемые выходные.</p>
+                    <div class="width--30p">
+                        <h2>Инфраструктура</h2>
+                        <p>Прекрасные дороги рядом с домом. Много мест для прогулки. 
+                        Всего в 200 км. от посёлка находится кольцо гор Кордильеры,
+                        на которых вы сможете провести незабываемые выходные.</p>
+                    </div>
+                    
+                    <div class="width--30p">
+                        <h2>Близость к Москве</h2>
+                        <p>При небольшой цене мы располагаемся близко к МКАД. 
+                        Всего 384 000 километров и вы в самом сердце России.</p>
+                    </div>
                 </div>
-                
-                <div class="width--30p">
-                    <h2>Близость к Москве</h2>
-                    <p>При небольшой цене мы располагаемся близко к МКАД. 
-                    Всего 384 000 километров и вы в самом сердце России.</p>
-                </div>
-            </div>
-        </section>
+            </section>
             <div id="about-jk"></div>
-            <section class="main-content-block b-color-gray">
-                <div class="center-position-content">
+            <section class="padding-all--50px b-color-gray">
+                <div class="content-block">
                     <div class="width--50p">
                         <h2>О ЖК "Лунное море"</h2>
                         <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
@@ -85,8 +85,8 @@
             </section>
 
             <div id="relax-place"></div>
-            <section class="main-content-block">
-                <div class="center-position-content">
+            <section class="padding-all--50px">
+                <div class="content-block">
                     <div class="width--30p">
                         <img src="images/moon-2.jpg" alt="about-logo">
                     </div>
@@ -107,6 +107,7 @@
             </section>
 
             <section class="call-back-block">
+                <div class="forma-block-width-center">
                 <h2>Оставьте заявку сегодня!</h2>
                 <form id="forma-broni">
                     <fieldset>
@@ -150,7 +151,7 @@
 
                     <button type="submit">Отправить</button>
                   </form>
-                  
+                </div>
             </section>
     </main>
 
