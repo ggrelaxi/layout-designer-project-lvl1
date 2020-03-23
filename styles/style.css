@@ -151,8 +151,12 @@ select {
 
 /**** Отступы ****/
 
-.padding-all--50px {
+.padding--50px {
     padding: 50px;
+}
+
+.padding-top--100px {
+    padding-top: 100px;
 }
 
 .margin--0--auto {
@@ -167,12 +171,23 @@ select {
     margin-right: 20px;
 }
 
+.margin-bottom--15px {
+    margin-bottom: 15px;
+}
+
+.margin-bottom--20px {
+    margin-bottom: 20px;
+}
+
 /**** Цвета ****/
 
 .color--black {
     color: #000;
 }
 
+.b-color--gray {
+    background-color: #ececec;
+}
 /**** Оформление ****/
 
 .list-style--none {
@@ -182,25 +197,48 @@ select {
 .text-decoration--none {
     text-decoration: none;
 }
+
+/**** Размеры ****/
+
+.font-size--48px {
+    font-size: 48px;
+}
+
+.font-size--20px {
+    font-size: 20px;
+}
+
+/**** Выравнивание ****/
+
+.text-align--center {
+    text-align: center;
+}
 /******************************** окончание общих стилей ********************************/
 
 /******************************** Стандартные блоки ********************************/
-.header-content-block__width-center, .forma-block-width-center {
+.container {
     width: 1000px;
     margin: 0 auto;
-    text-align:center;
-    
 }
 
-.content-block {
-    width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+.button {
+    padding: 5px 30px;
+    font-size: 16px;
+    background-color: transparent;
+    border-radius: 4px;
+    font-weight: bold;
+    border-width: 0.5px;
+    border-style: solid;
 }
 
-.b-color-gray {
-    background-color: #ececec;
+.header__white__btn {
+    color: #fff;
+    border-color: #FFF;
+}
+
+.forma__green__btn {
+    color: #66CDAA;
+    border-color: #66CDAA;
 }
 
 /* шрифт */
@@ -208,10 +246,6 @@ select {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-}
-
-h2 {
-    margin-bottom: 20px;
 }
 
 a {
@@ -223,10 +257,13 @@ a {
     display: flex;
     background-color: #FFF;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     height: 100px;
     padding: 0px 20px;
+    top: 0px;
+    left: 0px;
 }
 
 .header-content-block a {
@@ -239,12 +276,7 @@ a {
 }
 
 /* контент часть 1 блок с картинкой */
-
-main {
-    padding-top: 100px;
-}
-
-    .header-content-block {
+.header-content-block {
         background-image: url(../images/banner.png);
         background-position: center;
         padding: 30px 0px;
@@ -257,36 +289,7 @@ main {
         margin: 0 auto;
     }
 
-    .header-content-block h1 {
-        font-size: 48px;
-    }
-
-    .header-content-block p {
-        margin-bottom:15px;
-    }
-
-    .header-content-block button {
-        background-color: transparent;
-        border-radius: 4px;
-        color: #FFF;
-        border: 0.5px solid #FFF;
-        padding: 5px 20px;
-    }
-
 /* вторая часть с тремя блоками информации */
-
-.second-content-block {
-    background-color: #ececec;
-        
-}   
-
-.call-back-block {
-    display: flex;
-    padding: 50px;
-    align-items: center;
-    background-color: #ececec;
-    flex-direction: column;
-}
 
 .call-back-block h2 {
     font-size:30px;
@@ -327,19 +330,6 @@ label, input, select {
         border: 1px solid #66CDAA;
     }
 
-.input-width50-margin20 {
-    width: 40%;
-}
-
-button {
-    font-weight: bold;
-    font-size:16px;
-    color: #66CDAA;
-    border-radius: 10px;
-    border: 0.5px solid #66CDAA;
-    padding: 5px 30px;
-}
-
 /* подвал */
 
 footer {
@@ -364,8 +354,4 @@ footer {
 .footer-copy {
     margin-top: 10px;
     color: gray;
-}
-
-.footer-text-header {
-    font-size: 20px;
 }

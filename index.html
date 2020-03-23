@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="fixed-header align-items--center">
+    <header class="fixed-header">
             <div class="display--flex align-items--center">
                 
-                    <img class="width--50px height--50px margin-right--20px" src="images/index.svg" alt="logo">
+                    <img class="width--50px margin-right--20px" src="images/index.svg" alt="logo">
                 
                     <p>Лунное море</p>
                 
             </div>
 
-            <div class="display--flex">
                 <nav>
                     <ul class="display--flex list-style--none color--black">
                         <li class="margin-right--20px "><a class="text-decoration--none" href="#preimushestva">Преимущества</a></li>
@@ -26,48 +25,49 @@
                         <li class="margin-right--20px"><a class="text-decoration--none" href="#relax-place">Места для отдыха</a></li>
                     </ul>
                 </nav>
-            </div>
+            
      </header>
 
-    <main>
+    <main class="padding-top--100px">
         
         <section class="header-content-block display--flex align-items--center justify-content--center flex-direction--column">
-            <div class="header-content-block__width-center">
-            <img src="images/index.svg" alt="logo">
-            <h1>ЖК "Лунное море"</h1>
-            <p>Место, откуда не хочется улетать</p>
-            <a href="#forma-broni">Забронировать</a>
-        </div>
+            <div class="container text-align--center">
+                <img src="images/index.svg" alt="logo">
+                <h1 class="font-size--48px">ЖК "Лунное море"</h1>
+                <p class="margin-bottom--15px">Место, откуда не хочется улетать</p>
+                
+                <a class="button header__white__btn" href="#forma-broni">Забронировать</a>
+            </div>
         </section>
         
         <div id="preimushestva"></div>
-            <section class="padding-all--50px">
-                <div class="content-block">
+            <section class="padding--50px">
+                <div class="container display--flex justify-content--space-between">
                     <div class="width--30p">
-                        <h2>Уникальный вид</h2>
+                        <h2 class="margin-bottom--20px">Уникальный вид</h2>
                         <p>Вид на космос из вашего окна. Мы построили дома с большими окнами,
                         чтобы вы могли наслаждаться метеоритными потоками.</p>
                     </div>
 
                     <div class="width--30p">
-                        <h2>Инфраструктура</h2>
+                        <h2 class="margin-bottom--20px">Инфраструктура</h2>
                         <p>Прекрасные дороги рядом с домом. Много мест для прогулки. 
                         Всего в 200 км. от посёлка находится кольцо гор Кордильеры,
                         на которых вы сможете провести незабываемые выходные.</p>
                     </div>
                     
                     <div class="width--30p">
-                        <h2>Близость к Москве</h2>
+                        <h2 class="margin-bottom--20px">Близость к Москве</h2>
                         <p>При небольшой цене мы располагаемся близко к МКАД. 
                         Всего 384 000 километров и вы в самом сердце России.</p>
                     </div>
                 </div>
             </section>
             <div id="about-jk"></div>
-            <section class="padding-all--50px b-color-gray">
-                <div class="content-block">
+            <section class="padding--50px b-color--gray">
+                <div class="container display--flex justify-content--space-between">
                     <div class="width--50p">
-                        <h2>О ЖК "Лунное море"</h2>
+                        <h2 class="margin-bottom--20px">О ЖК "Лунное море"</h2>
                         <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
                         к тому же связь с мегаполисом не теряется – современные скоростные
                         трассы позволяют без труда добираться до столицы и обратно.
@@ -85,13 +85,13 @@
             </section>
 
             <div id="relax-place"></div>
-            <section class="padding-all--50px">
-                <div class="content-block">
+            <section class="padding--50px">
+                <div class="container display--flex justify-content--space-between">
                     <div class="width--30p">
                         <img src="images/moon-2.jpg" alt="about-logo">
                     </div>
                     <div class="width--50p">
-                        <h2>Места для отдыха</h2>
+                        <h2 class="margin-bottom--20px">Места для отдыха</h2>
                         <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
                         к тому же связь с мегаполисом не теряется – современные скоростные
                         трассы позволяют без труда добираться до столицы и обратно.
@@ -106,15 +106,15 @@
                 </div>
             </section>
 
-            <section class="call-back-block">
-                <div class="forma-block-width-center">
-                <h2>Оставьте заявку сегодня!</h2>
+            <section class="padding--50px b-color--gray">
+                <div class="container">
+                <h2 class="margin-bottom--20px text-align--center">Оставьте заявку сегодня!</h2>
                 <form id="forma-broni">
                     <fieldset>
                       <legend>Параметры квартиры</legend>
                         <div class="form-string">
                             <label for="room-count">Количество комнат</label>
-                            <select id="room-count" class="input-width50-margin20">
+                            <select id="room-count" class="width--40p">
                                 <option>1 комната</option>
                                 <option>2 комнаты</option>
                                 <option>3 комнаты</option>
@@ -123,7 +123,7 @@
 
                         <div class="form-string">
                             <label for="room-otdelka">Отделка</label>
-                            <select id="room-otdelka" class="input-width50-margin20">
+                            <select id="room-otdelka" class="width--40p">
                                 <option>Без отделки</option>
                                 <option>Средняя отделка</option>
                                 <option>Полная отделка</option>
@@ -149,7 +149,7 @@
                         </div>
                     </fieldset>
 
-                    <button type="submit">Отправить</button>
+                    <button class="button forma__green__btn" type="submit">Отправить</button>
                   </form>
                 </div>
             </section>
@@ -170,7 +170,7 @@
 
             <div class="display--flex flex-direction--row justify-content--center width--33p">
                 <div>
-                    <p class="footer-text-header">Проектная документация</p>
+                    <p class="font-size--20px">Проектная документация</p>
                     <ul>
                         <li>Скачать</li>
                         <li>Посмотреть на сайте</li>
@@ -180,7 +180,7 @@
 
             <div class="display--flex width--33p justify-content--flex-end">
                 <div>
-                    <p class="footer-text-header">О застройщике</p>
+                    <p class="font-size--20px">О застройщике</p>
                     <ul>
                         <li>Отзывы</li>
                         <li>Сайт компании</li>
